@@ -1,4 +1,10 @@
 import React, { useState } from "react";
+import { createClient } from "@supabase/supabase-js";
+
+const supabase = createClient(
+  "https://swwenprqyfdeseysjisv.supabase.co",
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN3d2VucHJxeWZkZXNleXNqaXN2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM1NzkzMTcsImV4cCI6MjA4OTE1NTMxN30.z5KMT-8UAYA1gaDulR4fZ4DGiwOD5XdqxRBUHCIQxUA"
+);
 
 const COLORS = {
   forest: "#1C3A2E", forestMid: "#2D5240", forestLight: "#3D6B54",
